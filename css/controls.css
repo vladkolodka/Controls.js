@@ -1,3 +1,6 @@
+.roller{
+    position: relative;
+}
 .roller .point{
     position: absolute;
     float: left;
