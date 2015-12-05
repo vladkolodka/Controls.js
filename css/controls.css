@@ -1,0 +1,10 @@
+.roller .point{
+    position: absolute;
+    float: left;
+    box-sizing: border-box;
+}
+.roller .pointer{
+    position: absolute;
+    cursor: pointer;
+    z-index: 999;
+}
