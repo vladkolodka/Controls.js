@@ -39,6 +39,7 @@ $(function (){
         pointer.mousedown(function (event) {
             var pointerOffset = event.clientX - pointer.offset().left + parseInt(pointer.css("marginLeft"));
             $("html").bind("mousemove", function (e) {
+               e.preventDefault();
                var pos = e.clientX - element.offset().left - pointerOffset;
                if(pos < 0 || pos > width) return false;
                 pointer.css("left", pos);
